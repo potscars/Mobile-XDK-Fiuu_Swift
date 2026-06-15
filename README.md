@@ -129,7 +129,9 @@ struct FiuuXDKWrapper: UIViewControllerRepresentable {
         ];
         
         let vc = FiuuXDKController(with: paymentDetails)
-        vc.startXDK(completion: onResults)
+        vc.startXDK(completion: onResults,
+         // Only for TNG eWallet, need to close manually
+         onFinishDeepLink: { vc.closePayment() })
         let navController = UINavigationController(rootViewController: vc)
         return navController
     }
@@ -209,10 +211,12 @@ extension ViewController: FiuuXDKControllerDelegate {
         }
     }
     
-    func didFinishDeepLink() {}
+    func didFinishDeepLink() {
+        // Only for TNG eWallet, need to close manually
+        vc.closePayment()
+    }
 }
 ```
-
 
 # Environment Configuration
 
