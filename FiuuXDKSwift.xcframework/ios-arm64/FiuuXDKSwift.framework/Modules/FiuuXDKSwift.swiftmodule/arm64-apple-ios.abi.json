@@ -178,13 +178,6 @@
         "moduleName": "FiuuXDKSwift"
       },
       {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "FiuuXDKSwift"
-      },
-      {
         "kind": "TypeDecl",
         "name": "APManager",
         "printedName": "APManager",
@@ -210,8 +203,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -496,94 +488,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "paymentAuthorizationController",
-            "printedName": "paymentAuthorizationController(_:didAuthorizePayment:handler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PKPaymentAuthorizationController",
-                "printedName": "PassKit.PKPaymentAuthorizationController",
-                "usr": "c:objc(cs)PKPaymentAuthorizationController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PKPayment",
-                "printedName": "PassKit.PKPayment",
-                "usr": "c:objc(cs)PKPayment"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PassKit.PKPaymentAuthorizationResult) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PKPaymentAuthorizationResult",
-                    "printedName": "PassKit.PKPaymentAuthorizationResult",
-                    "usr": "c:objc(cs)PKPaymentAuthorizationResult"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@FiuuXDKSwift@objc(cs)APManager(im)paymentAuthorizationController:didAuthorizePayment:handler:",
-            "mangledName": "$s12FiuuXDKSwift9APManagerC30paymentAuthorizationController_19didAuthorizePayment7handlerySo09PKPaymenteF0C_So0K0CySo0kE6ResultCctF",
-            "moduleName": "FiuuXDKSwift",
-            "objc_name": "paymentAuthorizationController:didAuthorizePayment:handler:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "paymentAuthorizationControllerDidFinish",
-            "printedName": "paymentAuthorizationControllerDidFinish(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PKPaymentAuthorizationController",
-                "printedName": "PassKit.PKPaymentAuthorizationController",
-                "usr": "c:objc(cs)PKPaymentAuthorizationController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@FiuuXDKSwift@objc(cs)APManager(im)paymentAuthorizationControllerDidFinish:",
-            "mangledName": "$s12FiuuXDKSwift9APManagerC39paymentAuthorizationControllerDidFinishyySo09PKPaymenteF0CF",
-            "moduleName": "FiuuXDKSwift",
-            "objc_name": "paymentAuthorizationControllerDidFinish:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -593,6 +497,7 @@
         "declAttributes": [
           "AccessControl",
           "Final",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -666,6 +571,23 @@
             "mangledName": "$sSH"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FiuuXDKSwift",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "FiuuXDKSwift"
       },
       {
         "kind": "Import",
@@ -1089,10 +1011,9 @@
             "moduleName": "FiuuXDKSwift",
             "declAttributes": [
               "Final",
-              "Preconcurrency",
-              "Custom",
               "AccessControl",
               "ObjC",
+              "Custom",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -1658,16 +1579,30 @@
     {
       "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/Services\/APManager.swift",
       "kind": "StringLiteral",
-      "offset": 604,
+      "offset": 651,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/Services\/APManager.swift",
+      "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/Services\/ApplePayTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 715,
+      "offset": 748,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/Services\/ApplePayTransaction.swift",
+      "kind": "StringLiteral",
+      "offset": 791,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/Services\/ApplePayTransaction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 824,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/FiuuXDKController.swift",
@@ -1721,49 +1656,49 @@
     {
       "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/FiuuXDKController.swift",
       "kind": "StringLiteral",
-      "offset": 10774,
+      "offset": 10045,
       "length": 23,
       "value": "\"mpopenmolpaywindow:\/\/\""
     },
     {
       "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/FiuuXDKController.swift",
       "kind": "StringLiteral",
-      "offset": 10825,
+      "offset": 10096,
       "length": 22,
       "value": "\"mpcloseallwindows:\/\/\""
     },
     {
       "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/FiuuXDKController.swift",
       "kind": "StringLiteral",
-      "offset": 10886,
+      "offset": 10157,
       "length": 43,
       "value": "\"mpclosepopupandrunscriptonmolpaywindow:\/\/\""
     },
     {
       "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/FiuuXDKController.swift",
       "kind": "StringLiteral",
-      "offset": 10952,
+      "offset": 10223,
       "length": 25,
       "value": "\"mptransactionresults:\/\/\""
     },
     {
       "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/FiuuXDKController.swift",
       "kind": "StringLiteral",
-      "offset": 11003,
+      "offset": 10274,
       "length": 23,
       "value": "\"mprunscriptonpopup:\/\/\""
     },
     {
       "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/FiuuXDKController.swift",
       "kind": "StringLiteral",
-      "offset": 11061,
+      "offset": 10332,
       "length": 26,
       "value": "\"mppinstructioncapture:\/\/\""
     },
     {
       "filePath": "\/Users\/hainizam.abdullah\/Documents\/Workspace\/Projects\/ios\/ios-swift\/FiuuXDKSwift\/FiuuXDKController.swift",
       "kind": "StringLiteral",
-      "offset": 11112,
+      "offset": 10383,
       "length": 20,
       "value": "\"mpclickapbutton:\/\/\""
     }
